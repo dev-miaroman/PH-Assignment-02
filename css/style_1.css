@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--background-color);
+}
+
+/* common class style start  */
+.max-width {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.second-max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.display-grid {
+    display: grid;
+}
+
+.center_content {
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --background-color: #1a0b2e;
+    --background-color-secondary: #230e3d;
+    --font-primary-color: #ffffff;
+    --font-color-secondary: #ffffff8f;
+    --button-font-color: #fffffffb;
+    --third-color: #00ff88;
+    --btn-new-bacnd-color: #00ff88;
+}
+
+/* common class style end  */
+
+/* button class start  */
+.button_common {
+    padding: 12px 16px;
+    background: linear-gradient(30deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+    color: var(--button-font-color);
+    border-radius: 10000px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+.button_common:hover {
+    transform: scaleX(1.2);
+
+    color: #f7e93f;
+}
+
+.btn_two {
+    background: transparent;
+    border: 2px solid rgb(8, 182, 104);
+    color: var(--third-color);
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 15px;
+    color: #000000;
+    font-size: 16px;
+    background-color: var(--btn-new-bacnd-color);
+    border: none;
+    border-radius: 20px;
+    transition: background-color 5s;
+}
+
+.microphone:hover .badge {
+    background-color: #fb09b4;
+    color: #f7e93f;
+}
+
+/*  utton class end  */
+
+/* nav class start  */
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+nav h2 {
+    font-size: 3rem;
+    color: var(--font-primary-color);
+    font-weight: 800;
+}
+
+nav h2 .second_line_title,
+.second_line_footer_title {
+    background: linear-gradient(30deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+}
+
+.nav_list,
+.footer_list li {
+    gap: 40px;
+    list-style: none;
+}
+
+.nav_list li a,
+.footer_list li a {
+    text-decoration: none;
+    color: var(--font-color-secondary);
+    font-size: 1rem;
+    line-height: 120%;
+    font-weight: 500;
+    transition: color 1s;
+}
+
+.nav_list li a:hover,
+.footer_list li a:hover {
+    text-decoration: solid white 1px;
+    color: rgb(211, 143, 211);
+}
+
+.hamburg_menu {
+    display: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* nav class end  */
+
+/* header class start  */
+header {
+    background-image: url(../assets/hero-bg.png);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 760px;
+    flex-direction: column;
+}
+
+.header_box {
+    margin: 100px auto 0 auto;
+    flex-direction: column;
+}
+
+.header_details {
+    text-align: center;
+}
+
+.header_details h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--font-primary-color);
+    margin-top: 40px;
+}
+
+.header_details p {
+    font-size: 16px;
+    color: var(--font-color-secondary);
+    margin-top: 10px;
+}
+
+/* header class end  */
+
+/* microphon class start  */
+.microphone {
+    background-image: url(../assets/hero-circle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: min(350px, 90%);
+    aspect-ratio: 1 / 1;
+    margin: 0px auto 0;
+    position: relative;
+    border-radius: 50%;
+    transition: transform 5s ease-out;
+}
+
+.microphone:hover {
+    transform: rotate(-360deg);
+    color: #9100f8;
+}
+
+.microphone img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* microphon class end  */
+
+/* btns class start  */
+.btns {
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.btns button {
+    align-items: center;
+    gap: 2px;
+}
+
+/* btns class end  */
+
+/* podcast class start  */
+.podcast_details {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.podcast_details h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--font-primary-color);
+    margin-bottom: 16px;
+}
+
+.podcast_details p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 50px;
+    padding: 0 50px;
+    color: var(--font-color-secondary);
+}
+
+.podcast_items {
+    justify-content: space-between;
+    padding: 50px 80px;
+}
+
+.rating_box {
+    text-align: center;
+}
+
+.rating_box h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--third-color);
+}
+
+.rating_box p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 16px;
+    color: var(--font-color-secondary);
+}
+
+/* podcast class start  */
+
+/* why choice class start  */
+.section_bg {
+    background-color: var(--background-color-secondary);
+    padding: 50px 0;
+}
+
+.choice_box {
+    margin-top: 20px;
+}
+
+.why_choice_title {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.why_choice_title h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--font-primary-color);
+}
+
+/* why choice class end  */
+
+/* choice_grid_card class start  */
+.choice_grid_card {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.card_grid {
+    text-align: left;
+    border-radius: 40px;
+    background-color: #351165;
+    padding: 40px;
+    gap: 16px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.card_grid h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--font-primary-color);
+}
+
+.card_grid p {
+    font-size: 16px;
+    color: var(--font-color-secondary);
+}
+
+/* choice_grid_card class end  */
+
+.first_body {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.second_body {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+/* episode_box class start  */
+.episode_box {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.episode_box h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--font-primary-color);
+}
+
+.episode_card {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* episode_box class end*/
+
+/* project class start*/
+.project {
+    background-color: #351165;
+    border-radius: 24px;
+    text-align: left;
+}
+
+.project iframe {
+    border-radius: 20px;
+    border: 0;
+    width: 100%;
+    height: 250px;
+}
+
+.project .video_details {
+    padding: 20px 20px;
+    color: var(--font-color-secondary);
+}
+
+.project h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--font-primary-color);
+}
+
+.project p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 15px 0;
+}
+
+/* project class end*/
+
+/* deuration_video class start*/
+.duration_video {
+    gap: 5px;
+    align-items: center;
+}
+
+.duration_video img {
+    width: 25px;
+    height: 25px;
+}
+
+/* deuration_video class end*/
+
+/* host_box class start */
+.host_box {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.host_box h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--font-primary-color);
+}
+
+.host_details {
+    gap: 50px;
+    padding: 40px;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color-secondary);
+}
+
+.host_text {
+    text-align: left;
+}
+
+.host_text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--font-primary-color);
+}
+
+.host_text p,
+.footer_info p {
+    font-size: 16px;
+    color: var(--font-color-secondary);
+    margin: 16px auto;
+    line-height: 24px;
+}
+
+/* host_box class end */
+
+/* socal_conatc class start */
+.social_contact {
+    gap: 30px;
+}
+
+.social_contact a {
+    border: #f7e93f 1px solid;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.social_contact a img {
+    width: 100%;
+    height: 20px;
+    margin: 10px;
+    margin: auto;
+}
+
+/* socal_conatc class end */
+
+/* footer_box class start */
+.footer_box {
+    background-image: url(../assets/footer-bg.png);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 412px;
+    display: flex;
+}
+
+.footer_info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer_info h2 {
+    font-size: 4rem;
+    color: var(--font-primary-color);
+}
+
+.footer_list {
+    align-items: center;
+    gap: 40px;
+}
+
+.footer_list li a {
+    gap: 8px;
+}
+
+/* footer_box class end */

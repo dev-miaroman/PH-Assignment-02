@@ -1,0 +1,143 @@
+/*  responsive section start  */
+@media screen and (max-width: 576px) {
+    nav{
+        justify-content: space-between;
+        padding: 20px;
+    }
+    nav h2{
+        font-size: 2rem;
+    }
+    nav ul,nav ul li,nav ul li a, .nav_button{
+        display: none;
+    }
+
+    .hamburg_menu{
+        display: block;
+    }
+
+    .episode_box, .podcast_details{
+        margin-top: 45px;
+    }
+    .podcast_details h2, .episode_box h2{
+        padding: 0 20px;
+    }
+    .header_details, .btns{
+        padding: 10px;
+    }
+    .btns{
+        flex-wrap: wrap;
+    }
+    .podcast_details{
+        gap: 15px;
+    }
+    .podcast_details p{
+        margin-bottom: 10px;
+    }
+    .podcast_items, .footer_list{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        justify-content: center;
+    }
+    .host_details{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .choice_grid_card, .episode_card{
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: auto;
+        padding: 20px;
+        
+    } 
+    
+    .why_choice_title{
+        margin-top: 10px;
+    }
+    
+    .second_body{
+        grid-column: span 1;
+    }
+
+   
+    .social_contact, .host_text{
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/*for medium device responsive start  */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    nav h2{
+        font-size: 2.1rem;
+    }
+    .section_bg{
+        padding: 50px 20px;
+    }
+    .choice_grid_card{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+   
+    .first_body{
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+    .side_body{
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .third_body{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .last_body{
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+    
+    .episode_card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .project{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        gap: 20px;
+    }
+       
+   .host_box h2{
+    margin-bottom: 50px;
+   }
+   .why_choice_title{margin-top: 50px;}
+
+    .project_mid{
+        direction: rtl;
+    }
+    .duration_video{
+        justify-content: left;}
+}
+/*for medium device responsive end  */
+
+/* for large device responsive start */
+@media screen  and (min-width:992px) and (max-width: 1600px){
+   .why_choice_title{
+    margin-top: 0;
+   }
+   .podcast_items{
+    padding: 50px 80px 100px 80px;
+   }
+   .host_box h2{
+    margin-bottom: 50px;
+   }
+}
+/* for large device responsive end */
+
+
+/*  for responsive section end  */
