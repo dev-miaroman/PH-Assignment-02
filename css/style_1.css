@@ -49,12 +49,12 @@ body {
     padding: 12px 16px;
     background: linear-gradient(30deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
     color: var(--button-font-color);
-    border-radius: 10000px;
+    border-radius: 100px;
     font-size: 1rem;
     font-weight: 600;
     border: none;
     cursor: pointer;
-    transition: transform 2s;
+    transition: transform 1s;
 }
 
 .button_common:hover {
@@ -103,8 +103,7 @@ nav h2 {
     font-weight: 800;
 }
 
-nav h2 .second_line_title,
-.second_line_footer_title {
+nav h2 .second_line_title, .second_line_footer_title {
     background: linear-gradient(30deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
 
     color: transparent;
@@ -113,24 +112,21 @@ nav h2 .second_line_title,
 
 }
 
-.nav_list,
-.footer_list li {
+.nav_list, .footer_list li {
     gap: 40px;
     list-style: none;
 }
 
-.nav_list li a,
-.footer_list li a {
+.nav_list li a, .footer_list li a {
     text-decoration: none;
     color: var(--font-color-secondary);
     font-size: 1rem;
     line-height: 120%;
     font-weight: 500;
-    transition: color 1s;
+    transition: color 0s;
 }
 
-.nav_list li a:hover,
-.footer_list li a:hover {
+.nav_list li a:hover, .footer_list li a:hover {
     text-decoration: solid white 1px;
     color: rgb(211, 143, 211);
 }
